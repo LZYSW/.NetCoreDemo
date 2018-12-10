@@ -1,0 +1,27 @@
+﻿
+@model List<MyNoteItem.Models.Note>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <table>
+        <tr><th>编号</th><th>标题</th><th>内容</th></tr>
+    </table>
+    @foreach (var item in Model)
+    {
+        <table>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Content</td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
+ 
